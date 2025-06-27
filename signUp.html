@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
     <link rel="stylesheet" href="bootstrap-5.0.2-dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="signUp.css">
+    <link rel="stylesheet" href="css/signUp.css">
 </head>
 
 <body>
@@ -27,18 +27,15 @@
                         <input type="password" class="form-control" id="passwordInput"
                             placeholder="Enter your password">
                     </div>
-                     <!-- <p class="text-danger d-none" id="emptyData">All inputs are required</p> -->
-                     <p class="d-none text-danger" id="existEmail">Email is already exist</p>
-                     <p class="d-none" id="correctSign">Success</p>
-                     <p class="text-danger d-none" id="invalidData">incorrect email or password</p>
-                    <button  class="btn w-100 mb-3 mt-2 " id="signBtn">Sign Up</button>
+                    <div id="alert"></div>
+                    <button  class="btn w-100 mb-3 mt-2" id="signBtn">Sign Up</button>
                     <P class="fs-5 text-light">You have an account?<a href="signIN.html" class="text-light text-decoration-none ms-1">Signin</a></P>
                 </form>
             </div>
         </div>
     </div>
     <script src="bootstrap-5.0.2-dist/js/bootstrap.bundle.js"></script>
-    <script src="script.js"></script>
+    <script src="js/signIN.js"></script>
 </body>
 
 </html>

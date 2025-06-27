@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
     <link rel="stylesheet" href="bootstrap-5.0.2-dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="css/home.css">
 </head>
 <body>
     <nav class="d-flex justify-content-around text-light p-2">
@@ -16,12 +16,18 @@
     <section class="d-flex justify-content-center align-items-center ">
     <div class="container text-center h-auto">
         <div class="row user-box">
-            <div class="login m-auto w-75 p-5 mt-5">
-                <h1>Welcome </h1>
+            <div class="login m-auto w-75 p-5 mt-5" id="welcomeMessage">
+                
             </div>
         </div>
     </div>
     </section>
     <script src="bootstrap-5.0.2-dist/js/bootstrap.bundle.js"></script>
+    <script>
+        let user = JSON.parse(localStorage.getItem('loggedInUser'));
+        if (user) {
+            document.getElementById('welcomeMessage').innerText = 'Welcome '+ user.name;
+        }
+    </script>
 </body>
 </html>
